@@ -1,0 +1,12 @@
+<ul class="collection-listing au-card-list au-card-list--matchheight">
+  {% for item in site.data.homepage.cards %}
+    <li class="col-xs-12 col-sm-4">
+      <a href="{{ item.url }}" class="au-card au-card--shadow au-cta-link">
+        <h3 class="au-card__title">{{ item.title }}</h3>
+        <div class="au-card__text">
+          <p>{{ item.description }}</p>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
