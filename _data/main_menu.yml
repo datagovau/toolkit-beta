@@ -1,4 +1,16 @@
 # Main menu
 nav_items:
+- title: Home
+  url: /
+- title: Principles
+  url: /reference/principles/
+- title: Policy
+  url: /policy
+- title: Planning
+  url: /planning
+- title: Publishing
+  url: /publishing
+- title: Reference
+  url: /reference
 - title: data.gov.au
   url: https://data.gov.au

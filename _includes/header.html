@@ -1,19 +1,90 @@
-<div class="header">
-  <div class="au-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-
-          <a class="au-header__brand" href="/">
-            <img src="https://data.gov.au/api/v0/content/header/logo" alt="data.gov.au - beta" class="au-header__logo">
-          </a>
-
+<!--
+<div class="headergovau">
+  <div class="container">
+    <div class="row headergovau__bar">
+      <div class="col-md-12">
+        <a href="#headergovau-accordion" class="headergovau__button js-header-accordion au-accordion--closed" aria-controls="headergovau-accordion" aria-expanded="false" aria-selected="false" role="tab" onclick="return AU.accordion.Toggle( this )"><span class="headergovau__text"><span class="headergovau__title">Australian Government&nbsp;</span><span class="headergovau__official">official website</span></span></a>
+        <a href="https://dta.gov.au" class="headergovau__publisher">dta.gov.au</a>
+      </div>
+    </div>
+    <div id="headergovau-accordion" class="headergovau__content row au-accordion__body au-accordion--closed" aria-hidden="true" style="">
+      <div class="au-accordion__body-wrapper">
+        <div class="col-sm-6">
+          <div class="headergovau__icon-content icon--govau">
+            <p class="headergovau__content__title">The .gov.au means it’s official.</p>
+            <p>Australian government websites always use a .gov.au domain. Before sharing sensitive information online, make sure you’re on a .gov.au site by inspecting your browser’s address (or 'location') bar.</p>
+          </div>
         </div>
-
-        <div class="col-md-8">
-          {% include main-nav.html %}
+        <div class="col-sm-6">
+          <div class="headergovau__icon-content icon--secure">
+            <p class="headergovau__content__title">This site is secure.</p>
+            <p>The https:// ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+-->
+
+<header class="au-header au-header--dark" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <a class="au-header__brand " href="/" data-proofer-ignore="">
+          <img class="au-header__brand-image" alt="The Australian Government Coat of Arms" src="/assets/img/header-logo-agov.png">
+          <div class="au-header__text"><h1 class="au-header__heading">Open Data Toolkit</h1></div>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <nav class="au-main-nav au-main-nav--dark" aria-label="main navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="main-nav-default" class="au-main-nav__content">
+          <button
+            aria-controls="main-nav-default"
+            class="au-main-nav__toggle au-main-nav__toggle--open"
+            onClick="return AU.mainNav.Toggle( this )">
+            Menu
+          </button>
+          <div class="au-main-nav__menu">
+            <div class="au-main-nav__menu-inner">
+              <div class="au-main-nav__focus-trap-top"></div>
+              <button
+                aria-controls="main-nav-default"
+                class="au-main-nav__toggle au-main-nav__toggle--close"
+                onClick="return AU.mainNav.Toggle( this )">
+                Close
+              </button>
+              <ul class="au-link-list">
+                {% for item in site.data.main_menu.nav_items %}
+                  <li class="{% if item.url == page.url %}active{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                {% endfor %}
+              </ul>
+              <ul class="au-link-list au-main-nav--submenu">
+                <li class="">
+                  <a class="icon icon--dark icon--github icon--action" href="https://github.com/datagovau/toolkit">GitHub</a>
+                </li>
+                <li class="">
+                  <a class="icon icon--dark icon--download icon--action" href="https://data.gov.au/">data.gov.au</a>
+                </li>
+              </ul>
+              <div class="au-main-nav__focus-trap-bottom"></div>
+            </div>
+          </div>
+          <div
+            class="au-main-nav__overlay"
+            aria-controls="main-nav-default"
+            onClick="return AU.mainNav.Toggle( this )">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>

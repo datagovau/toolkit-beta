@@ -1,0 +1,19 @@
+cards:
+- title: Open by default
+  description: The Australian Government has committed to release non sensitive data as open by default for the benefit of the Australian public.
+  url: /reference/principles/1-open-by-default
+- title: Timely and comprehensive
+  description: Open data is only valuable if it’s relevant and released completely.
+  url: /reference/principles/2-timely-comprehensive
+- title: Accessible and usable
+  description: Ensure that data is machine readable, easy to find, free of charge and released under an open license.
+  url: /reference/principles/3-accessible-usable
+- title: Comparable and Interoperable
+  description: Use commonly-agreed data standards to make sure that your data is reusable and more valuable.
+  url: /reference/principles/4-comparable-interoperable
+- title: For improved governance & citizen engagement
+  description: Transparency can improve public services and help hold governments to account.
+  url: /reference/principles/5-governance-engagement
+- title: For inclusive development and innovation
+  description: Open data can help spur inclusive economic development.
+  url: /reference/principles/6-open-by-default
