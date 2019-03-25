@@ -2,7 +2,8 @@
 layout: default
 permalink: /
 ---
-<h1>Open Data Toolkit</h1>
+
+## {{ site.title }}
 
 <div class="abstract">
   <p>Guidance for government publishers of open data in Australia.</p>
