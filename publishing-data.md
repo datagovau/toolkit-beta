@@ -35,40 +35,7 @@ permalink: /publishing-data
 <p>There are both push and pull methods for dataset updates. Documentation on the CKAN API is at <a href="http://docs.ckan.org/en/943-writing-extensions-tutorial/api.html#example-importing-datasets-with-the-ckan-api">http://docs.ckan.org/en/943-writing-extensions-tutorial/api.html#example-importing-datasets-with-the-ckan-api</a>
 </p>
 <h3>Automating data harvest from your ArcGIS Open Data site</h3>
-<p>If you are making use of ArcGIS Online, you can also setup and expose your spatial data via an <a href="http://opendata.arcgis.com/">ArcGIS Open Data site</a>.  To sync your items from this Open Data site to data.gov.au, please follow the below steps:
-</p>
-<ol><li>Point your browser to <a href="https://data.gov.au/harvest">https://data.gov.au/harvest</a></li>
-<li>Click the <b>Add Harvest Source</b> button</li>
-<li>Locate the data.json file on your ArcGIS Open Data site. To access the data.json of your site, append /data.json to the home page URL. e.g.<a href="http://vicroadsopendata.vicroadsmaps.opendata.arcgis.com/data.json">http://vicroadsopendata.vicroadsmaps.opendata.arcgis.com/data.json</a></li>
-<li>Paste the location of your data.json file into <b>URL textbox</b></li>
-<li>Name your harvest we recommend a name like <b>[Organisation Name] ArcGIS Harvest</b></li>
-<li>Select ‘data.json’  as your harvest source</li>
-<li>You don’t need to enter any other settings as the entry will be reviewed and approved by the data.gov.au team</li>
-<li>Click Save</li></ol>
-<h4>Related screenshots</h4>
-<ul >
-		<li  ><div >
-			<div  ><div ><a href="/assets/file/Addharvest.jpg" ><img alt="" src="/images/thumb/4/48/Addharvest.jpg/250px-Addharvest.jpg" width="250" height="67" srcset="/images/thumb/4/48/Addharvest.jpg/375px-Addharvest.jpg 1.5x, /images/thumb/4/48/Addharvest.jpg/500px-Addharvest.jpg 2x"></a></div></div>
-			<div >
-<p><b>Add Harvest Source</b>
-</p>
-			</div>
-		</div></li>
-		<li  ><div >
-			<div  ><div ><a href="/assets/file/HarvestURL.jpg" ><img alt="" src="/images/thumb/a/a9/HarvestURL.jpg/250px-HarvestURL.jpg" width="250" height="60" srcset="/images/thumb/a/a9/HarvestURL.jpg/375px-HarvestURL.jpg 1.5x, /images/thumb/a/a9/HarvestURL.jpg/500px-HarvestURL.jpg 2x"></a></div></div>
-			<div >
-<p><b>Harvest URL</b>
-</p>
-			</div>
-		</div></li>
-		<li  ><div >
-			<div  ><div ><a href="/assets/file/Sourcetype.jpg" ><img alt="" src="/images/thumb/7/7a/Sourcetype.jpg/250px-Sourcetype.jpg" width="250" height="57" srcset="/images/thumb/7/7a/Sourcetype.jpg/375px-Sourcetype.jpg 1.5x, /images/thumb/7/7a/Sourcetype.jpg/500px-Sourcetype.jpg 2x"></a></div></div>
-			<div >
-<p><b>Source Type</b>
-</p>
-			</div>
-		</div></li>
-</ul>
+<p>If you are making use of ArcGIS Online, you can also setup and expose your spatial data via an <a href="http://opendata.arcgis.com/">ArcGIS Open Data site</a>. Contact the data.gov.au team to arrange this connection. 
 <h3>Automating data transformation and uploading with Taverna</h3>
 <p>The data.gov.au team is still exploring this tool but it was strongly recommend by colleagues in the Western Australian Government for data workflows and automating data uploads.
 </p><p>Details at <a href="http://www.taverna.org.uk/introduction/">http://www.taverna.org.uk/introduction/</a>
