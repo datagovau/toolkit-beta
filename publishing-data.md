@@ -267,7 +267,7 @@ permalink: /publishing-data
 <ol><li>Browse to the relevant dataset</li>
 <li>Click on the resource that requires an update</li>
 <li>Click the <b>Manage</b> button located on the near top right of the page</li>
-<li>Click the <b>Red X</b> button to remove the current version of the resource</li>
+<li>Click the red <b>Remove</b> button to remove the current version of the resource</li>
 <li>If uploading an updated file click the <b>Upload</b> button</li>
 <li>If updating a link to an existing service, file or site click the <b>Link</b> button</li>
 <li>If required update the <b>Name</b></li>
@@ -294,7 +294,7 @@ permalink: /publishing-data
 		<li  ><div >
 			<div  ><div ><a href="/assets/file/3.Updating_a_Resource_in_an_Existing_Dataset_3.jpg" ><img alt="" src="/images/thumb/1/16/3.Updating_a_Resource_in_an_Existing_Dataset_3.jpg/159px-3.Updating_a_Resource_in_an_Existing_Dataset_3.jpg" width="159" height="120" srcset="/images/thumb/1/16/3.Updating_a_Resource_in_an_Existing_Dataset_3.jpg/239px-3.Updating_a_Resource_in_an_Existing_Dataset_3.jpg 1.5x, /images/thumb/1/16/3.Updating_a_Resource_in_an_Existing_Dataset_3.jpg/318px-3.Updating_a_Resource_in_an_Existing_Dataset_3.jpg 2x"></a></div></div>
 			<div >
-<p><b>Red X button to remove the current version of the resource</b>
+<p><b>Remove button to remove the current version of the resource</b>
 </p>
 			</div>
 		</div></li>
