@@ -5,9 +5,9 @@ permalink: /publishing-data
 ---
 
 <h1>Publishing Data</h1>
-<h2>Format</h2>
+<h2>Preparing your data for publishing</h2>
 <p>You must post tabular data in CSV if you want API access to be automatically generated for your dataset. The platform will host files of nearly any type, but it will only enable API or data visualisation for ‘clean’ CSV files. Finance also provides support for some geospatial data types including KML, and will advise on additional formats as they are supported.
-</p><p>However, you can publish any data file type, and Finance encourages entities to publish multiple formats where appropriate or useful to users.
+</p><p>However, you can publish any data file type, and we would encourage publishing in multiple formats where appropriate or useful to users.
 </p>
 <h3>Compressing a CSV into a ZIP</h3>
 <p>Compressing CSV's reduces the amount of time it takes to upload and download a file. This is particularly useful when a <b>CSV</b> has a large amount of data. 
@@ -26,14 +26,14 @@ permalink: /publishing-data
 <h2>Supportive documentation/context</h2>
 <p>Publish any supportive documentation/caveats/contextual information in the text of the descriptive information about the data set.  If the information is extensive it can also be uploaded as a an additional resource to the dataset. <i>Please do not</i> put the data into the documentation itself, as it means the platform will treat it as just another file like a PDF rather than as a data file. This means the data is inaccessible to users and no API or data visualisation will be available for your dataset.
 </p>
+
 <h2>Automated Publishing</h2>
-<p>To automate your data uploads, you will need to either:
+<p>There are options within the data.gov.au system to push data into the catalog automatically or have the system pull from your data catalog automatically. Documentation on the CKAN API is at <a href="http://docs.ckan.org/en/943-writing-extensions-tutorial/api.html#example-importing-datasets-with-the-ckan-api">http://docs.ckan.org/en/943-writing-extensions-tutorial/api.html#example-importing-datasets-with-the-ckan-api</a>
 </p>
-<ul><li>Have technical expertise in house to develop scripts that use the CKAN API;</li>
-<li>Use software such as FME (proprietary) or Kettle (open source) to extract data from your data sources, clean them and push appropriate data up to data.gov.au; or</li>
-<li>Pay a small amount to a services provider to create automation tools for you.</li></ul>
-<p>There are both push and pull methods for dataset updates. Documentation on the CKAN API is at <a href="http://docs.ckan.org/en/943-writing-extensions-tutorial/api.html#example-importing-datasets-with-the-ckan-api">http://docs.ckan.org/en/943-writing-extensions-tutorial/api.html#example-importing-datasets-with-the-ckan-api</a>
-</p>
+<h3>Automating data updates</h3>
+If you have already published a dataset with metadata manually, it is still possible to automate the ongoing update of the data of that dataset.
+You can use tools like cURL or Powershell to write a script to automatically upload a new version of the file. Examples are provided on <a href="https://github.com/datagovau/ckan-api-examples/blob/master/README.md">https://github.com/datagovau/ckan-api-examples/blob/master/README.md</a>
+You can also write a program in a programming language or integrate uploading data to data.gov.au to an existing bespoke system using the <a href="https://docs.ckan.org/en/2.9/maintaining/filestore.html#filestore-api">FileStore API</a> We have <a href="https://github.com/datagovau/ckan-api-examples">some examples in PHP and .net available on GitHub</a>
 <h3>Automating data harvest from your ArcGIS Open Data site</h3>
 <p>If you are making use of ArcGIS Online, you can also setup and expose your spatial data via an <a href="http://opendata.arcgis.com/">ArcGIS Open Data site</a>. Contact the data.gov.au team to arrange this connection. 
 <h3>Automating data transformation and uploading with Taverna</h3>
@@ -50,6 +50,7 @@ permalink: /publishing-data
 <li>Create a private parameter in the workbench with your API key. This is easier to use instead of copying and pasting your API key multiple times.</li></ol>
 <p>You can find a sample FME workbench (<i>created by <a href="http://www.twitter.com/@mattswards">Matthew Swards</a> from <a href="https://data.gov.au/organization/city-of-ballarat">City of Ballarat</a></i>) on the <a href="https://github.com/datagovau/ckan-api-examples/tree/master/FME">datagovau github</a>
 </p>
+
 <h2>Manual Publishing</h2>
 <ol><li>Log in with an authenticated account</li>
 <li>Browse to Datasets (top menu)</li>
@@ -394,9 +395,4 @@ permalink: /publishing-data
 <p>If you wish to replace an existing resource with a new version ensure that whenever possible the new file continues to use the same structure for the document. Developers and others are able to access the resource via its unique identifier (eg: [<a href="https://data.gov.au/dataset/disaster-events-with-category-impact-and-location/resource/ad5c6594-571e-4874-994c-a9f964d789df">ad5c6594-571e-4874-994c-a9f964d789df</a>]). If you overwrite a resource with a new file which is formatted differently or a different file type (replacing CSV with an XLS) you will run the risk of disrupting applications which utilise the resource.
 </p><p>If you plan to radically change the structure or format the data is delivered you should consider adding the new file as a different resource to the existing dataset. This will allow developers to continue to use the existing resource’s API while they make the necessary changes to their existing applications.
 </p>
-<h2>Dataset Comments</h2>
-<p>CKAN is integrated with Disqus for comment management. We have turned full moderation on for comments to allow entities the ability (and confidence) to manage and respond to comments in an appropriate and timely fashion.
-</p><p>The cloud based commenting system is Disqus and the moderation panel is at <a href="http://datagovau.disqus.com/admin/moderate/#/approved">http://datagovau.disqus.com/admin/moderate/#/approved</a>
-</p><p>Entities need to request the username and password for moderating comments. data.gov.au administrators monitor comments on a daily basis.
-</p><p>Please find more information on CKAN commenting at <a href="http://docs.ckan.org/en/ckan-1.7/commenting.html">http://docs.ckan.org/en/ckan-1.7/commenting.html</a>
 </p>
